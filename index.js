@@ -4,6 +4,6 @@ function preventRefreshOnSubmit(){
     });
 }
 function retrieveEmployeeInformation(){
- return $(':contains(text)'); 
+ return $('form:eq(text)'); 
 }
 preventRefreshOnSubmit();
