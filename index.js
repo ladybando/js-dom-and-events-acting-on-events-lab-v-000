@@ -1,13 +1,31 @@
 function preventRefreshOnSubmit(){
     document.querySelector('form').addEventListener('submit', function(event){
-      event.preventDefault()
+      event.preventDefault();
     });
 }
+
 function retrieveEmployeeInformation(){
- return $('form :input'); 
+  return document.querySelector('input').value;
 }
-preventRefreshOnSubmit();
 
 function addNewElementAsLi(){
-  return $('');
+   document.querySelector('.employee-list').innerHTML = retrieveEmployeeInformation();
 }
+
+function addNewLiOnClick(){
+  document.querySelector('input[type="submit"]').addEventListener('click', function(event) {
+  addNewElementAsLi();
+  document.querySelector('input').value = ''});
+  }
+
+function clearEmployeeListOnLinkClick(){
+  let ul = document.querySelector('ul');
+  document.querySelector('a').addEventListener('click', function(event){
+    ul.innerHTML = '';
+  });
+}
+
+
+
+
+preventRefreshOnSubmit();
