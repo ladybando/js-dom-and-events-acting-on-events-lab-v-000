@@ -5,5 +5,6 @@ function preventRefreshOnSubmit(){
 }
 function retrieveEmployeeInformation(){
  return $(':input'); 
+ console.log('input')
 }
 preventRefreshOnSubmit();
