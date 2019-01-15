@@ -4,6 +4,6 @@ function preventRefreshOnSubmit(){
     });
 }
 function retrieveEmployeeInformation(){
- return $('employee').toString; 
+ return $('input:text'); 
 }
 preventRefreshOnSubmit();
