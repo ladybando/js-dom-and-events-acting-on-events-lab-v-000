@@ -4,6 +4,6 @@ function preventRefreshOnSubmit(){
     });
 }
 function retrieveEmployeeInformation(){
- return $('input'); 
+ return $('form :input'); 
 }
 preventRefreshOnSubmit();
