@@ -4,6 +4,6 @@ function preventRefreshOnSubmit(){
     });
 }
 function retrieveEmployeeInformation(){
- return $(''); 
+ return $('employee').toString; 
 }
 preventRefreshOnSubmit();
