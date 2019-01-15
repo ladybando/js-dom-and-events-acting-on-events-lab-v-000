@@ -7,3 +7,7 @@ function retrieveEmployeeInformation(){
  return $('form :input'); 
 }
 preventRefreshOnSubmit();
+
+function addNewElementAsLi(){
+  return $('');
+}
